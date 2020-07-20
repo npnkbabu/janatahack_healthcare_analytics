@@ -1,0 +1,36 @@
+Favorable outcome:
+For the first 2 formats, a favourable outcome is defined as getting a health_score, while in the third format it is defined as visiting at least a stall.
+You need to predict the chances (probability) of having a favourable outcome.
+ 
+
+Data Description
+train.zip contains 6 different csv files apart from the data dictionary as described below:
+
+Health_Camp_Detail.csv – File containing Health_Camp_Id, Camp_Start_Date, Camp_End_Date and Category details of each camp.
+
+Train.csv – File containing registration details for all the test camps. This includes Patient_ID, Health_Camp_ID, Registration_Date and a few anonymized variables as on registration date.
+
+Patient_Profile.csv – This file contains Patient profile details like Patient_ID, Online_Follower, Social media details, Income, Education, Age, First_Interaction_Date, City_Type and Employer_Category
+
+First_Health_Camp_Attended.csv – This file contains details about people who attended health camp of first format. This includes Donation (amount) & Health_Score of the person.
+
+Second_Health_Camp_Attended.csv - This file contains details about people who attended health camp of second format. This includes Health_Score of the person.
+
+Third_Health_Camp_Attended.csv - This file contains details about people who attended health camp of third format. This includes Number_of_stall_visited & Last_Stall_Visited_Number.
+
+
+
+Test Data
+
+Test.csv – File containing registration details for all the camps done after 1st April 2006. This includes Patient_ID, Health_Camp_ID, Registration_Date and a few anonymized variables as on registration date. Participant should make predictions for these patient camp combinations
+
+
+
+sample_submission.csv
+
+Patient_ID: Unique Identifier for each patient. This ID is not sequential in nature and can not be used in modeling
+
+Health_Camp_ID: Unique Identifier for each camp. This ID is not sequential in nature and can not be used in modeling
+
+Outcome: Predicted probability for having a favourable outcome depending on the format
+
